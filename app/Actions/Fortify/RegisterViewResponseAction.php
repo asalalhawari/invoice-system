@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\RegisterViewResponse;
+use Laravel\Fortify\Fortify;
 
 class RegisterViewResponseAction implements RegisterViewResponse
 {
@@ -40,6 +41,6 @@ class RegisterViewResponseAction implements RegisterViewResponse
 
     public function toResponse($request)
     {
-        return response()->json(['message' => 'User created successfully'], 201);
+        return view('auth.register');
     }
 }

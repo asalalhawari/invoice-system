@@ -146,7 +146,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Laravel\Fortify\FortifyServiceProvider::class,
+        App\Providers\FortifyProvider::class,
+        \Laravel\Fortify\FortifyServiceProvider::class,
     ],
-
 ];

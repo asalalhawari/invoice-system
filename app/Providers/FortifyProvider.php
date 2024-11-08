@@ -15,8 +15,9 @@ use Illuminate\Support\Str;
 use Laravel\Fortify\Contracts\RegisterResponse;
 use Laravel\Fortify\Contracts\RegisterViewResponse;
 use Laravel\Fortify\Fortify;
+use Laravel\Fortify\FortifyServiceProvider;
 
-class FortifyServiceProvider extends ServiceProvider
+class FortifyProvider extends FortifyServiceProvider
 {
     /**
      * Register any application services.
